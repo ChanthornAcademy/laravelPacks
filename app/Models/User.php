@@ -9,7 +9,8 @@ use Illuminate\Notifications\Notifiable;
 use Laravel\Fortify\TwoFactorAuthenticatable;
 use Laravel\Jetstream\HasProfilePhoto;
 use Laravel\Sanctum\HasApiTokens;
-
+// https://laravelarticle.com/laravel-user-activity
+use Haruncpi\LaravelUserActivity\Traits\Loggable;
 class User extends Authenticatable
 {
     use HasApiTokens;
@@ -17,6 +18,7 @@ class User extends Authenticatable
     use HasProfilePhoto;
     use Notifiable;
     use TwoFactorAuthenticatable;
+    use Loggable;
 
     /**
      * The attributes that are mass assignable.

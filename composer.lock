@@ -4,8 +4,69 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0777733e0a1c75f74f8c09223bbb966f",
+    "content-hash": "62a3d73a959304c0a2419dc8e6b3002a",
     "packages": [
+        {
+            "name": "asantibanez/laravel-blade-sortable",
+            "version": "v1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/asantibanez/laravel-blade-sortable.git",
+                "reference": "0bdd90f31d3f0e8fc7c0a4ebd48f1d01c63f0eea"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/asantibanez/laravel-blade-sortable/zipball/0bdd90f31d3f0e8fc7c0a4ebd48f1d01c63f0eea",
+                "reference": "0bdd90f31d3f0e8fc7c0a4ebd48f1d01c63f0eea",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7.0|^8.0",
+                "php": "^7.2|^7.3|^7.4|^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^8.0|^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Asantibanez\\LaravelBladeSortable\\LaravelBladeSortableServiceProvider"
+                    ],
+                    "aliases": {
+                        "LaravelBladeSortable": "Asantibanez\\LaravelBladeSortable\\LaravelBladeSortableFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Asantibanez\\LaravelBladeSortable\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andrés Santibáñez",
+                    "email": "santibanez.andres@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Custom Blade components to add sortable/drag-and-drop HTML elements in your apps",
+            "homepage": "https://github.com/asantibanez/laravel-blade-sortable",
+            "keywords": [
+                "asantibanez",
+                "laravel-blade-sortable"
+            ],
+            "support": {
+                "issues": "https://github.com/asantibanez/laravel-blade-sortable/issues",
+                "source": "https://github.com/asantibanez/laravel-blade-sortable/tree/v1.0.3"
+            },
+            "time": "2021-02-06T01:48:56+00:00"
+        },
         {
             "name": "asm89/stack-cors",
             "version": "v2.0.2",
@@ -991,6 +1052,100 @@
                 "source": "https://github.com/guzzle/psr7/tree/1.7.0"
             },
             "time": "2020-09-30T07:37:11+00:00"
+        },
+        {
+            "name": "haruncpi/laravel-user-activity",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/haruncpi/laravel-user-activity.git",
+                "reference": "ac0f3f1be996cbefcbc4ba05707b096a7382ca60"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/haruncpi/laravel-user-activity/zipball/ac0f3f1be996cbefcbc4ba05707b096a7382ca60",
+                "reference": "ac0f3f1be996cbefcbc4ba05707b096a7382ca60",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Haruncpi\\LaravelUserActivity\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Haruncpi\\LaravelUserActivity\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "cc-by-4.0"
+            ],
+            "authors": [
+                {
+                    "name": "MD.HARUN-UR-RASHID",
+                    "email": "harun.cox@gmail.com"
+                }
+            ],
+            "description": "Monitor user activity easily!",
+            "keywords": [
+                "activity",
+                "laravel",
+                "user"
+            ],
+            "support": {
+                "issues": "https://github.com/haruncpi/laravel-user-activity/issues",
+                "source": "https://github.com/haruncpi/laravel-user-activity/tree/v1.0.2"
+            },
+            "time": "2020-12-31T06:16:32+00:00"
+        },
+        {
+            "name": "infureal/artisan-gui",
+            "version": "2.0.0@beta",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/inFureal/artisan-gui.git",
+                "reference": "7ec78e73b5a8371ba407da626c97cb55809540ac"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/inFureal/artisan-gui/zipball/7ec78e73b5a8371ba407da626c97cb55809540ac",
+                "reference": "7ec78e73b5a8371ba407da626c97cb55809540ac",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^8.0",
+                "php": "^7.3|^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Infureal\\Providers\\GuiServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Infureal\\": "./src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Beautiful package for [laravel:artisan] gui for cool kids.",
+            "support": {
+                "issues": "https://github.com/inFureal/artisan-gui/issues",
+                "source": "https://github.com/inFureal/artisan-gui/tree/2.0.0@beta"
+            },
+            "time": "2021-01-23T10:10:25+00:00"
         },
         {
             "name": "jaybizzle/crawler-detect",
